@@ -22,7 +22,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.northdash.northdash",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.northdash.northdash",
+      "versionCode": 1
     }
   }
 }
