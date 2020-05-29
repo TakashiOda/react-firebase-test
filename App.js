@@ -27,7 +27,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Text>bbb</Text>
+        <Text>bbbcccddd</Text>
       </Container>
     );
   }
