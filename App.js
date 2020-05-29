@@ -1,13 +1,12 @@
 import React from 'react';
 import Expo from 'expo';
 import { StyleSheet, Text, View } from 'react-native';
-import {
-  Container, Content, Header, Form, Input, Button, Label, Icon, List, ListItem,
-} from 'native-base';
+import { Container } from 'native-base';
 // import ListView from "deprecated-react-native-swipeable-listview";
 import * as firebase from 'firebase';
 // import * as Facebook from 'expo-facebook';
 // import { Alert } from 'react-native';
+import BodyText from './src/elements/BodyText';
 
 // Initialize Firebase
 const firebaseConfig = {
@@ -28,7 +27,11 @@ export default class App extends React.Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Text>bbbcccddd</Text>
+        <View>
+          <View>aa</View>
+          <Text>Memoapp</Text>
+          <BodyText>hihihihihih</BodyText>
+        </View>
       </Container>
     );
   }
