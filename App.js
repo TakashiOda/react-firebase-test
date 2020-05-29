@@ -7,8 +7,7 @@ import * as firebase from 'firebase';
 // import * as Facebook from 'expo-facebook';
 // import { Alert } from 'react-native';
 import Appbar from './src/components/Appbar';
-import MemoList from './src/components/MemoList';
-import CircleButton from './src/elements/CircleButton';
+import MemoListScreen from './src/screens/MemoListScreen';
 
 // Initialize Firebase
 const firebaseConfig = {
@@ -30,8 +29,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Appbar />
-        <MemoList />
-        <CircleButton>+</CircleButton>
+        <MemoListScreen />
       </View>
     );
   }
