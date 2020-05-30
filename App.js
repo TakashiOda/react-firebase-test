@@ -8,7 +8,7 @@ import * as firebase from 'firebase';
 // import { Alert } from 'react-native';
 import Appbar from './src/components/Appbar';
 //import MemoDetailScreen from './src/screens/MemoDetailScreen';
-import MemoDetailScreen from './src/screens/MemoDetailScreen';
+import MemoListScreen from './src/screens/MemoListScreen';
 
 
 // Initialize Firebase
@@ -31,7 +31,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Appbar />
-        <MemoDetailScreen />
+        <MemoListScreen />
       </View>
     );
   }
