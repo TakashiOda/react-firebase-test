@@ -1,13 +1,10 @@
 import React from 'react';
-import Expo from 'expo';
+// import Expo from 'expo';
 import { StyleSheet, View } from 'react-native';
 // import { Container } from 'native-base';
-// import ListView from "deprecated-react-native-swipeable-listview";
 import * as firebase from 'firebase';
 // import * as Facebook from 'expo-facebook';
-// import { Alert } from 'react-native';
 import Appbar from './src/components/Appbar';
-//import MemoDetailScreen from './src/screens/MemoDetailScreen';
 import MemoListScreen from './src/screens/MemoListScreen';
 
 

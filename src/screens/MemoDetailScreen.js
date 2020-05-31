@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet, View , Text } from 'react-native';
-
+import { StyleSheet, View, Text } from 'react-native';
 import CircleButton from '../elements/CircleButton';
 
 
@@ -25,7 +24,7 @@ class MemoDetailScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width :'100%',
+    width: '100%',
   },
   memoHeader: {
     height: 100,

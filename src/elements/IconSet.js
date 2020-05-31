@@ -1,13 +1,11 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
-class BodyText extends React.Component {
+class IconSet extends React.Component {
   render() {
     return (
       <View>
-        <Text style={styles.text}>
-          { this.props.children }
-        </Text>
+        <Text style={styles.text}>+</Text>
       </View>
     );
   }
@@ -16,8 +14,7 @@ class BodyText extends React.Component {
 const styles = StyleSheet.create({
   text: {
     color: '#DDD',
-    backgroundColor: '#eee',
   },
 });
 
-export default BodyText;
+export default IconSet;
