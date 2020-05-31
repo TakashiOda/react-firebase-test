@@ -5,7 +5,8 @@ import { StyleSheet, View } from 'react-native';
 import * as firebase from 'firebase';
 // import * as Facebook from 'expo-facebook';
 import Appbar from './src/components/Appbar';
-import MemoListScreen from './src/screens/MemoListScreen';
+import MemoDetailScreen from './src/screens/MemoDetailScreen';
+// import MemoListScreen from './src/screens/MemoListScreen';
 
 
 // Initialize Firebase
@@ -28,7 +29,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Appbar />
-        <MemoListScreen />
+        <MemoDetailScreen />
       </View>
     );
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import IconSet from './IconSet';
+// import IconSet from './IconSet';
+// import { Ionicons } from '@expo/vector-icons';
 
 class CircleButton extends React.Component {
   render() {
@@ -15,7 +16,7 @@ class CircleButton extends React.Component {
     return (
       <View style={[styles.circleButton, style, { backgroundColor: bgColor }]}>
         <Text style={[styles.circleButtonTitle, { color: textColor }]}>
-          <IconSet />
+          {this.props.children}
         </Text>
       </View>
     );
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
   },
   circleButtonTitle: {
     fontSize: 32,
-    lineHeight: 32,
+    lineHeight: 38,
   },
 });
 

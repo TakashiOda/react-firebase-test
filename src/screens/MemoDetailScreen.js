@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
 import CircleButton from '../elements/CircleButton';
 
 
@@ -15,7 +16,9 @@ class MemoDetailScreen extends React.Component {
         <View style={styles.memoContent}>
           <Text>講座のアイデアだよ・・・・</Text>
         </View>
-        <CircleButton color="white" style={styles.editButton}>+</CircleButton>
+        <CircleButton color="white" style={styles.editButton}>
+          <FontAwesome name="pencil" size={24} color="#ff007f" />
+        </CircleButton>
       </View>
     );
   }
