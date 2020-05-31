@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 // import IconSet from './IconSet';
 // import { Ionicons } from '@expo/vector-icons';
+// import { FontAwesome } from '@expo/vector-icons';
+
 
 class CircleButton extends React.Component {
   render() {
