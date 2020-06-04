@@ -1,13 +1,21 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import firebase from 'firebase';
 import { FontAwesome } from '@expo/vector-icons';
 import MemoList from '../components/MemoList';
 import CircleButton from '../elements/CircleButton';
 
 class MemoListScreen extends React.Component {
+  componentDidMount() {
+    console.log('didmount!!');
+    // const { currentUser } = firebase.auth();
+    // firebase.firestore().collection(`users/${currentUser.uid}/memos`)
+  }
+
   handlePress() {
-    const { params } = this.props.navigation.state;
-    this.props.navigation.navigate('MemoCreate', { currentUser: params.currentUser });
+    // const { params } = this.props.navigation.state;
+    // this.props.navigation.navigate('MemoCreate', { currentUser: params.currentUser });
+    this.props.navigation.navigate('MemoCreate');
   }
 
   render() {
