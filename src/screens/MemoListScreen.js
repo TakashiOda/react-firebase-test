@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import MemoList from '../components/MemoList';
 import CircleButton from '../elements/CircleButton';
 
@@ -9,9 +9,11 @@ class MemoListScreen extends React.Component {
     return (
       <View style={styles.container}>
         <MemoList navigation={this.props.navigation} />
-        <CircleButton onPress={() => { this.props.navigation.navigate('Edit'); }}>
-          <AntDesign name="plus" size={24} color="white" />
-        </CircleButton>
+        <View>
+          <CircleButton onPress={() => { this.props.navigation.navigate('Edit'); }}>
+            <FontAwesome size={36} color="white" name="plus" />
+          </CircleButton>
+        </View>
       </View>
     );
   }

@@ -3,7 +3,6 @@ import { StyleSheet, View, Text } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import CircleButton from '../elements/CircleButton';
 
-
 class MemoDetailScreen extends React.Component {
   render() {
     return (
@@ -17,7 +16,7 @@ class MemoDetailScreen extends React.Component {
           <Text>講座のアイデアだよ・・・・</Text>
         </View>
         <CircleButton color="white" style={styles.editButton} onPress={() => { this.props.navigation.navigate('Edit'); }}>
-          <FontAwesome name="pencil" size={24} color="#ff007f" />
+          <FontAwesome size={36} color="#E31676" name="pencil" />
         </CircleButton>
       </View>
     );

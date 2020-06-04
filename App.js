@@ -1,3 +1,4 @@
+import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import firebase from 'firebase';
@@ -16,19 +17,20 @@ const firebaseConfig = {
   storageBucket: ENV.FIREBASE_STORAGE,
   messagingSenderId: ENV.FIREBASE_SENDER_ID,
 };
-firebase.initializeApp(firebaseConfig);
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
 
-const App = createStackNavigator(
+const Stack = createStackNavigator(
   {
-    Login: LoginScreen,
     Signup: SignupScreen,
+    Login: LoginScreen,
     Home: MemoListScreen,
     Detail: MemoDetailScreen,
     Edit: MemoEditScreen,
   },
   {
-    initialRouteName: 'Login',
-    /* The header config from HomeScreen is now here */
+    initialRouteName: 'Signup',
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: '#2C4956',
@@ -42,5 +44,11 @@ const App = createStackNavigator(
   },
 );
 
-
-export default createAppContainer(App);
+export default class App extends React.Component {
+  render() {
+    const Layout = createAppContainer(Stack);
+    return (
+      <Layout />
+    );
+  }
+}
