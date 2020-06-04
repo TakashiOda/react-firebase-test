@@ -23,14 +23,14 @@ if (!firebase.apps.length) {
 
 const Stack = createStackNavigator(
   {
-    Signup: SignupScreen,
     Login: LoginScreen,
+    Signup: SignupScreen,
     Home: MemoListScreen,
     Detail: MemoDetailScreen,
     Edit: MemoEditScreen,
   },
   {
-    initialRouteName: 'Signup',
+    initialRouteName: 'Login',
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: '#2C4956',
